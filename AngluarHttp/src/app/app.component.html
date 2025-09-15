@@ -1,3 +1,10 @@
+@if (error()) {
+  <app-error-modal
+    [title]="'An error occurred!'"
+    [message]="error()"
+  />
+} 
+
 <header>
   <img src="logo.png" alt="Stylized globe" />
   <h1>PlacePicker</h1>
@@ -12,3 +19,4 @@
 
   <app-user-places />
 </main>
+/home/sumuru/Angular/Udemy/angular-complete-guide-course-resources-main/code-snapshots/12-http/10-handling-errors-globally/src/app/shared
